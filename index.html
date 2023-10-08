@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate White Noise 2D</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #41413b;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    #canvas {
+      width: 50vh;
+      height: 50vh;
+      image-rendering: pixelated;
+      background-color: #cedabe;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 20pt;
+      border-radius: 5px;
+      background-color: #cedabe;
+      border: 1px solid #41413b;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="canvas"></canvas>
+  <button>Generate White Noise</button>
+</body>
+<script src="script.js"></script>
+
+</html>
