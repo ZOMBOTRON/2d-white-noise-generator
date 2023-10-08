@@ -1,5 +1,6 @@
 const canvas = document.querySelector('#canvas');
 const ctx = canvas.getContext('2d');
+const button = document.querySelector('button');
 
 canvas.width = canvas.height = 50;
 
@@ -18,3 +19,5 @@ function generateNoise() {
 }
 
 generateNoise();
+
+button.addEventListener('click', generateNoise);
